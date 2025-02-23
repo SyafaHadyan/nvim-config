@@ -17,21 +17,33 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = {
         -- add LazyVim and import its plugins
-        { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+        {
+            "LazyVim/LazyVim",
+            import = "lazyvim.plugins",
+        },
         -- import/override with your plugins
-        { import = "plugins" },
+        {
+            import = "plugins",
+        },
         {
             "vyfor/cord.nvim",
             build = ":Cord update",
             -- opts = {}
         },
-        { "wakatime/vim-wakatime", lazy = false },
+        {
+            "wakatime/vim-wakatime",
+            lazy = false,
+        },
         {
             "ThePrimeagen/harpoon",
             branch = "harpoon2",
             dependencies = { "nvim-lua/plenary.nvim" },
         },
-        { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+        {
+            "catppuccin/nvim",
+            name = "catppuccin",
+            priority = 1000,
+        },
     },
     defaults = {
         -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
@@ -58,7 +70,7 @@ require("lazy").setup({
                 -- "netrwPlugin",
                 "tarPlugin",
                 "tohtml",
-                "tutor",
+                -- "tutor",
                 "zipPlugin",
             },
         },
