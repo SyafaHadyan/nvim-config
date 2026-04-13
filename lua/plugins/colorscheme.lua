@@ -57,4 +57,5 @@ require("catppuccin").setup({
 })
 
 -- setup must be called before loading
+-- vim.cmd.source("~/.local/share/nvim/lazy/catppuccin/colors/catppuccin-frappe.vim")
 vim.cmd.colorscheme("catppuccin-frappe")
